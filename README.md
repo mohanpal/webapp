@@ -11,10 +11,6 @@ This app is build on
 - scikit-learn
 - Jupyter notebook
 
-## Algorithms
-- MLP-ANN(Scikit-learn)
-- LSTM(Keras)
-
 ### Libraries required
 #### use pip to install any dependencies
 - streamlit as st 
