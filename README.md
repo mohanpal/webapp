@@ -44,5 +44,5 @@ This app is build on
 ```
 streamlit run app.py
 ```
-##Tab with localhost port will be open
+## Tab with localhost:port will be open
 ## Please wait for 60 seconds on app page, run time can vary based on your system .
