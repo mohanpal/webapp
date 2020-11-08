@@ -16,6 +16,7 @@ This app is build on
 - LSTM(Keras)
 
 ### Libraries required
+#### use pip to install any dependencies
 - streamlit as st 
 - pandas 
 - numpy 
@@ -34,3 +35,14 @@ This app is build on
 - sklearn.model_selection import train_test_split
 - tensorflow as tf
 - PIL import Image
+
+## To run this app
+
+- Download file(unzip file)
+- change directory to the downloaded folder
+- Run below command from cmd
+```
+streamlit run app.py
+```
+##Tab with localhost port will be open
+## Please wait for 60 seconds on app page, run time can vary based on your system .
