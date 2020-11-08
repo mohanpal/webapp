@@ -1,5 +1,5 @@
-# webapp
-## datathon-2020
+# Electricity and Pandemic - A web app
+## Melbourne Datathon-2020
 
 Requirement
 
@@ -9,11 +9,16 @@ This app is build on
 - streamlit
 - tensorflow
 - scikit-learn
+- Jupyter notebook
+
+## Algorithms
+- MLP-ANN(Scikit-learn)
+- LSTM(Keras)
 
 ### Libraries required
 - streamlit as st 
-- pandas as pd 
-- numpy as np 
+- pandas 
+- numpy 
 - pydeck as pdk 
 - altair as alt 
 - datetime
