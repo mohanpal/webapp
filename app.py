@@ -20,13 +20,13 @@ from PIL import Image
 
 st.title('Electro Base App')
 
-image = Image.open('C:/Users/HP/Desktop/datathon/App/main-img.jpg')
+image = Image.open('main-img.jpg')
 st.image(image, use_column_width=True)
 st.write('Please use side bar for different viz.')
 
-df = pd.read_csv("C:/Users/HP/Desktop/datathon/App/final_data.csv") 
-df_dollar = pd.read_csv("C:/Users/HP/Desktop/datathon/App/Data/AUD_USD Historical Data.csv")
-df_cases = pd.read_csv("C:/Users/HP/Desktop/datathon/App/Data/covid cases.csv")
+df = pd.read_csv("final_data.csv") 
+df_dollar = pd.read_csv("Data/AUD_USD Historical Data.csv")
+df_cases = pd.read_csv("Data/covid cases.csv")
 data = {'Type of Applicance':  ['Battery solar powered combined refrigerator and freezer', 
                                 'waterpacks freezer',
                                 'Solar direct drive combined refrigerator',
@@ -102,7 +102,7 @@ if cols == 'TOTAL DEMAND AND PREDICTION':
     model.add(tf.keras.layers.LSTM(64, return_sequences=False))
     model.add(tf.keras.layers.Dropout(0.3))
     model.add(tf.keras.layers.Dense(1))
-    model = tf.keras.models.load_model('C:/Users/HP/Desktop/datathon/App/model.h5')
+    model = tf.keras.models.load_model('model.h5')
     model.evaluate_generator(test_generator, verbose=0)
     predictions = model.predict_generator(test_generator)
     df_pred = pd.concat([pd.DataFrame(predictions), pd.DataFrame(x_test[:,1:][win_length:])],axis=1)
