@@ -1,0 +1,12 @@
+streamlit==0.70.0
+pandas==1.1.4
+tensorflow==2.3.1
+h5py==2.10.0
+pydeck==0.5.0
+numpy==1.19.4
+plotly==4.12.0
+matplotlib==3.3.2
+altair==4.1.0
+Keras==2.4.3
+Pillow==8.1.2
+scikit_learn==0.24.1
